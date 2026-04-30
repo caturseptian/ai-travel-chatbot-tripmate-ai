@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripMate AI - Asisten Perjalanan Pintar</title>
+    <meta
+      name="description"
+      content="TripMate AI: asisten perjalanan pintar untuk merencanakan liburan, itinerary, budget, kuliner, dan transportasi."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="brand">
+          <div class="brand-icon" aria-hidden="true">✈️</div>
+          <div class="brand-text">
+            <h1>TripMate AI</h1>
+            <p class="subtitle">Asisten perjalanan pintar</p>
+          </div>
+        </div>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          title="Toggle dark mode"
+        >
+          <span class="theme-icon">🌙</span>
+        </button>
+      </header>
+
+      <!-- Suggested prompts -->
+      <section class="suggestions" id="suggestions">
+        <button class="suggestion" type="button" data-prompt="Buatkan itinerary Bali 3 hari">
+          🌴 Itinerary Bali 3 hari
+        </button>
+        <button class="suggestion" type="button" data-prompt="Rekomendasi wisata murah di Jogja">
+          🏯 Wisata murah Jogja
+        </button>
+        <button class="suggestion" type="button" data-prompt="Saran liburan keluarga ke Bandung">
+          👨‍👩‍👧 Liburan keluarga Bandung
+        </button>
+      </section>
+
+      <!-- Chat area -->
+      <main id="chat-box" class="chat-box" aria-live="polite"></main>
+
+      <!-- Error banner -->
+      <div id="error-banner" class="error-banner hidden" role="alert"></div>
+
+      <!-- Input form -->
+      <form id="chat-form" class="chat-form" autocomplete="off">
+        <textarea
+          id="user-input"
+          class="user-input"
+          rows="1"
+          placeholder="Tanya apa aja soal liburanmu... ✈️"
+          required
+        ></textarea>
+        <button type="submit" id="send-btn" class="send-btn" aria-label="Kirim pesan">
+          <span class="send-label">Kirim</span>
+          <span class="send-icon" aria-hidden="true">➤</span>
+        </button>
+      </form>
+
+      <footer class="footer">
+        <span>Powered by Google Gemini · Dibuat dengan ❤️ untuk traveler Indonesia</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
