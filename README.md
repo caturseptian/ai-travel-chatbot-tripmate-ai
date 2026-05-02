@@ -140,7 +140,7 @@ ai-travel-chatbot/
    - Edit `.env` dan isi:
 
      ```env
-     GEMINI_API_KEY=AIzaSyxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+     GEMINI_API_KEY=
      PORT=3000
      ```
 
